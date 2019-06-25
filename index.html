@@ -25,11 +25,13 @@
       <nav>
         <div class="logo">Lobos</div>
         <ul>
-          <li class="current"><a href="#page-1">Home</a></li>
-          <li><a href="#page-2">Projects</a></li>
-          <li><a href="#page-3">Skills</a></li>
-          <li><a href="#page-4">Resume</a></li>
-          <li><a href="#page-5">Contact</a></li>
+          <li>
+            <a class="current" id="home">Home</a>
+          </li>
+          <li><a id="projects">Projects</a></li>
+          <li><a id="skills">Skills</a></li>
+          <li><a id="resume">Resume</a></li>
+          <li><a id="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +40,7 @@
         <div class="left">
           <div class="description">
             <h1>
-              Kevin Lobos Software Developer / Full Stack Developer
+              Kevin Lobos <br />Software Developer / <br />Full Stack Developer
             </h1>
             <p>
               I am an alumni at Farmingdale State College, seeking a full time
@@ -209,9 +211,147 @@
         </div>
       </div>
     </section>
-    <section class="page" id="page-2"></section>
+    <section class="page" id="page-2">
+      <div class="container">
+        <h1 class="title">My Projects</h1>
+        <div class="projects-container">
+          <div class="proj regular-projects">
+            <h3 class="sub-title">HTML / CSS / JS</h3>
+            <div class="dots">
+              <i class="fas fa-circle selected" id="html-dot-1"></i>
+              <i class="fas fa-circle" id="html-dot-2"></i>
+              <i class="fas fa-circle" id="html-dot-3"></i>
+              <i class="fas fa-circle" id="html-dot-4"></i>
+              <i class="fas fa-circle" id="html-dot-5"></i>
+            </div>
+            <div class="project-box" id="html-scroll">
+              <div class="projects" id="html-proj-1">
+                <div class="project"></div>
+                <div class="sub-title">Project Name</div>
+                <a href="https://www.github.com" target="_blank" class="btn">
+                  Code</a
+                >
+                <a
+                  href="https://www.github.com"
+                  target="_blank"
+                  class="btn btn-demo"
+                >
+                  Demo</a
+                >
+              </div>
+              <div class="projects" id="html-proj-2">
+                <div class="project"></div>
+                <div class="sub-title">Project Name</div>
+                <a href="https://www.github.com" target="_blank" class="btn">
+                  Code</a
+                >
+                <a
+                  href="https://www.github.com"
+                  target="_blank"
+                  class="btn btn-demo"
+                >
+                  Demo</a
+                >
+              </div>
+              <div class="projects" id="html-proj-3">
+                <div class="project"></div>
+                <div class="sub-title">Project Name</div>
+                <a href="https://www.github.com" target="_blank" class="btn">
+                  Code</a
+                >
+                <a
+                  href="https://www.github.com"
+                  target="_blank"
+                  class="btn btn-demo"
+                >
+                  Demo</a
+                >
+              </div>
+              <div class="projects" id="html-proj-4">
+                <div class="project"></div>
+                <div class="sub-title">Project Name</div>
+                <a href="https://www.github.com" target="_blank" class="btn">
+                  Code</a
+                >
+                <a
+                  href="https://www.github.com"
+                  target="_blank"
+                  class="btn btn-demo"
+                >
+                  Demo</a
+                >
+              </div>
+              <div class="projects" id="html-proj-5">
+                <div class="project"></div>
+                <div class="sub-title">Project Name</div>
+                <a href="https://www.github.com" target="_blank" class="btn">
+                  Code</a
+                >
+                <a
+                  href="https://www.github.com"
+                  target="_blank"
+                  class="btn btn-demo"
+                >
+                  Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="proj react-projects">
+            <h3 class="sub-title">React JS</h3>
+            <div class="dots">
+              <i class="fas fa-circle selected"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="projects">
+              <div class="project"></div>
+              <div class="sub-title">Project Name</div>
+              <a href="https://www.github.com" target="_blank" class="btn">
+                Code</a
+              >
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                class="btn btn-demo"
+              >
+                Demo</a
+              >
+            </div>
+          </div>
+          <div class="proj vue-projects">
+            <h3 class="sub-title">Vue JS</h3>
+            <div class="dots">
+              <i class="fas fa-circle selected"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="projects">
+              <div class="project"></div>
+              <div class="sub-title">Project Name</div>
+              <a href="https://www.github.com" target="_blank" class="btn">
+                Code</a
+              >
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                class="btn btn-demo"
+              >
+                Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="page" id="page-3"></section>
     <section class="page" id="page-4"></section>
     <section class="page" id="page-5"></section>
+    <script src="js/main.js"></script>
+    <script src="js/box-scroll.js"></script>
   </body>
 </html>

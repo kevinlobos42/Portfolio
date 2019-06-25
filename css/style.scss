@@ -1,7 +1,8 @@
 @import "vars";
-html {
-  scroll-behavior: smooth;
-}
+@import "utilities";
+// html {
+//   scroll-behavior: smooth;
+// }
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ header {
   position: fixed;
   width: 100vw;
   & nav {
-    width: 75%;
+    width: 80%;
     margin: auto;
     height: 100%;
     display: flex;
@@ -45,18 +46,22 @@ header {
     & li {
       font-size: 1.3rem;
       color: white;
-      opacity: 0.7;
+      // opacity: 0.7;
       margin: 0.5rem 2rem;
       cursor: pointer;
-      &.current {
+      & .current {
         opacity: 1;
         border: solid 3px #fff;
         padding: 0.5rem 1rem;
-        // margin: 0;
         border-radius: 1rem;
       }
-      &:hover {
+      a {
+        opacity: 0.7;
+        transition: all 0.3s;
+      }
+      & a:hover {
         opacity: 1;
+        transform: scale(1.1);
       }
     }
   }
@@ -75,7 +80,7 @@ header {
     justify-content: center;
     color: white;
     & .container {
-      width: 80%;
+      width: 85%;
       height: 80%;
       display: flex;
       align-items: center;
@@ -84,8 +89,7 @@ header {
         width: 55%;
         display: flex;
         flex-direction: column;
-        // justify-content: ;
-        // align-items: center;
+
         & h1 {
           font-size: 3.5rem;
           line-height: 1.4;
@@ -152,6 +156,95 @@ header {
   }
   &-2 {
     background: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    & .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      & .projects-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      & .proj {
+        width: 400px;
+        height: auto;
+
+        & .dots {
+          margin: 1rem;
+          i {
+            margin: 0.5rem 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+          }
+        }
+        & .project-box {
+          display: flex;
+          flex-direction: row;
+          overflow: auto;
+        }
+        & .projects {
+          margin-right: 2rem;
+          & a {
+            margin: 0 0.5rem;
+            &.btn-demo {
+              font-weight: medium;
+            }
+          }
+          & .sub-title {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      & .regular-projects {
+        .projects {
+          & .project {
+            background: #ed7846;
+          }
+          & .btn-demo {
+            background: #ed7846;
+            color: white;
+          }
+        }
+        .selected {
+          color: #ed7846;
+        }
+      }
+      & .react-projects {
+        .projects {
+          & .project {
+            background: #00d8ff;
+          }
+          & .btn-demo {
+            background: #00d8ff;
+            color: white;
+          }
+        }
+        .selected {
+          color: #00d8ff;
+        }
+      }
+      & .vue-projects {
+        .projects {
+          & .project {
+            background: #00c180;
+          }
+          & .btn-demo {
+            background: #00c180;
+            color: white;
+          }
+        }
+        .selected {
+          color: #00c180;
+        }
+      }
+    }
   }
   &-3 {
     background: $third-color;

@@ -1,5 +1,50 @@
-html {
-  scroll-behavior: smooth;
+.current {
+  color: white;
+  opacity: 1;
+}
+
+.container {
+  width: 85%;
+  height: 80%;
+  margin: auto;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.3rem;
+  font-weight: normal;
+}
+
+.sub-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  background: white;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  width: 130px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.project {
+  height: 343.75px;
+  width: 400px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -36,7 +81,7 @@ header {
 }
 
 header nav {
-  width: 75%;
+  width: 80%;
   margin: auto;
   height: 100%;
   display: -webkit-box;
@@ -60,20 +105,27 @@ header nav .logo {
 header nav li {
   font-size: 1.3rem;
   color: white;
-  opacity: 0.7;
   margin: 0.5rem 2rem;
   cursor: pointer;
 }
 
-header nav li.current {
+header nav li .current {
   opacity: 1;
   border: solid 3px #fff;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
 
-header nav li:hover {
+header nav li a {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav li a:hover {
   opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .page {
@@ -96,7 +148,7 @@ header nav li:hover {
 }
 
 #page-1 .container {
-  width: 80%;
+  width: 85%;
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +246,127 @@ header nav li:hover {
 
 #page-2 {
   background: #c04b4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+#page-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-2 .container .projects-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page-2 .container .proj {
+  width: 400px;
+  height: auto;
+}
+
+#page-2 .container .proj .dots {
+  margin: 1rem;
+}
+
+#page-2 .container .proj .dots i {
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#page-2 .container .proj .project-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: auto;
+}
+
+#page-2 .container .proj .projects {
+  margin-right: 2rem;
+}
+
+#page-2 .container .proj .projects a {
+  margin: 0 0.5rem;
+}
+
+#page-2 .container .proj .projects a.btn-demo {
+  font-weight: medium;
+}
+
+#page-2 .container .proj .projects .sub-title {
+  margin-bottom: 1rem;
+}
+
+#page-2 .container .regular-projects .projects .project {
+  background: #ed7846;
+}
+
+#page-2 .container .regular-projects .projects .btn-demo {
+  background: #ed7846;
+  color: white;
+}
+
+#page-2 .container .regular-projects .selected {
+  color: #ed7846;
+}
+
+#page-2 .container .react-projects .projects .project {
+  background: #00d8ff;
+}
+
+#page-2 .container .react-projects .projects .btn-demo {
+  background: #00d8ff;
+  color: white;
+}
+
+#page-2 .container .react-projects .selected {
+  color: #00d8ff;
+}
+
+#page-2 .container .vue-projects .projects .project {
+  background: #00c180;
+}
+
+#page-2 .container .vue-projects .projects .btn-demo {
+  background: #00c180;
+  color: white;
+}
+
+#page-2 .container .vue-projects .selected {
+  color: #00c180;
 }
 
 #page-3 {

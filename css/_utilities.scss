@@ -3,7 +3,41 @@
   opacity: 1;
 }
 .container {
-  width: 80%;
+  width: 85%;
   height: 80%;
+  margin: auto;
+  // background: white;
+}
+.title {
+  font-size: 3.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.3rem;
+  font-weight: normal;
+}
+.sub-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.btn {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 1rem 0;
   background: white;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  width: 130px;
+  // height: 50px;
+  align-self: center;
+}
+.project {
+  height: 343.75px;
+  width: 400px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
