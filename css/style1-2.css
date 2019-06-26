@@ -9,6 +9,13 @@
   margin: auto;
 }
 
+.logo {
+  font-weight: medium;
+  color: white;
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+}
+
 .title {
   font-size: 3.5rem;
   line-height: 1.4;
@@ -25,7 +32,7 @@
 .btn {
   display: inline-block;
   border-radius: 1rem;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   background: white;
   font-size: 1.3rem;
   text-align: center;
@@ -45,6 +52,34 @@
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.progress-box {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.progress-bar {
+  display: inline-block;
+  width: 75%;
+  height: 65%;
+  background: white;
+  margin-left: 6rem;
+  border-radius: 3rem;
+}
+
+.progress-bar div {
+  background: #c8e789;
 }
 
 * {
@@ -81,7 +116,7 @@ header {
 }
 
 header nav {
-  width: 80%;
+  width: 85%;
   margin: auto;
   height: 100%;
   display: -webkit-box;
@@ -93,13 +128,6 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header nav .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  font-family: "Merienda", cursive;
 }
 
 header nav li {
@@ -315,11 +343,19 @@ header nav li a:hover {
 }
 
 #page-2 .container .proj .projects {
+  height: 500px;
   margin-right: 2rem;
 }
 
 #page-2 .container .proj .projects a {
-  margin: 0 0.5rem;
+  margin: 0 1.5rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#page-2 .container .proj .projects a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #page-2 .container .proj .projects a.btn-demo {
@@ -380,4 +416,4 @@ header nav li a:hover {
 #page-5 {
   background: #b550c9;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style1-2.css.map */

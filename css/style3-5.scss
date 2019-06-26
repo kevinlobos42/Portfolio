@@ -1,0 +1,18 @@
+#page {
+  &-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      & .sub-title {
+        font-size: 3rem;
+      }
+      padding-right: 0rem;
+    }
+  }
+}
