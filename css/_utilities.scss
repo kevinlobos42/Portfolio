@@ -95,3 +95,23 @@
     // }
   }
 }
+embed {
+  // display: none;
+  ::-webkit-scrollbar {
+    background: red;
+  }
+}
+.resume {
+  background: white;
+  height: 700px;
+  width: 650px;
+  overflow: auto;
+  margin: 3.5rem 0;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  #resume {
+    overflow: auto;
+    width: 650px;
+    margin: 0;
+  }
+}

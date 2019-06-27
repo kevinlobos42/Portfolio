@@ -48,6 +48,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -106,15 +107,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 2rem;
-  margin-bottom: 1rem;
-  height: 88%;
+  border-radius: 0.5rem;
+  margin-bottom: 2.5rem;
+  height: 85%;
+  width: 50%;
   border: solid 3px #aaa;
 }
 
 #page-5 .container .container-box {
-  height: 80%;
-  width: 60%;
+  height: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +168,7 @@
 
 #page-5 .container .message-input textarea {
   border-radius: 0.8rem;
-  width: 60%;
+  width: 75%;
   border: solid 1px #ccc;
   padding: 1rem;
   -webkit-transition: all 0.3s;
@@ -179,7 +181,7 @@
 }
 
 #page-5 .container label {
-  width: 60%;
+  width: 75%;
   font-size: 1.4rem;
 }
 
@@ -191,10 +193,25 @@
   font-size: 1.4rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  width: 60%;
+  width: 75%;
 }
 
 #page-5 .container input:focus {
   border: solid 1px #b550c9;
+}
+
+#page-5 .container .btn {
+  margin-top: 2.5rem;
+  width: 75%;
+  background: #333;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#page-5 .container .btn:hover {
+  background: #b550c9;
+  color: white;
+  border: none;
 }
 /*# sourceMappingURL=style3-5.css.map */
