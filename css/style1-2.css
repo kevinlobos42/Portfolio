@@ -57,29 +57,48 @@
 .progress-box {
   width: 100%;
   height: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 2fr 1fr 10fr;
+      grid-template-columns: 2fr 1fr 10fr;
+  grid-gap: 0;
   margin-top: 50px;
+}
+
+.progress-box img {
+  width: 55px;
+  height: 55px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .progress-bar {
   display: inline-block;
-  width: 75%;
+  width: 91%;
   height: 65%;
-  background: white;
+  background: #fff;
   margin-left: 6rem;
-  border-radius: 3rem;
+  border-radius: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  margin-left: 4rem;
 }
 
 .progress-bar div {
-  background: #c8e789;
+  background: #c04b86;
+  opacity: 0.8;
 }
 
 * {
@@ -91,7 +110,7 @@
 
 body {
   height: 100%;
-  width: 600vw;
+  width: 500vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
