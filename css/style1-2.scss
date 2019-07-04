@@ -167,7 +167,7 @@ header {
         justify-content: space-between;
       }
       & .proj {
-        width: 400px;
+        width: 520px;
         height: auto;
 
         & .dots {
@@ -182,6 +182,16 @@ header {
           display: flex;
           flex-direction: row;
           overflow: auto;
+          & .project {
+            background: #ed7846;
+          }
+          & #html-proj-1 .project {
+            background: url("../img/movie-site.PNG") no-repeat center
+              center/cover;
+          }
+          & #html-proj-5 .project {
+            background: url("../img/rps-site.PNG") no-repeat center center/cover;
+          }
         }
         & .projects {
           height: 500px;
@@ -203,9 +213,6 @@ header {
       }
       & .regular-projects {
         .projects {
-          & .project {
-            background: #ed7846;
-          }
           & .btn-demo {
             background: #ed7846;
             color: white;

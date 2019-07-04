@@ -44,8 +44,8 @@
 }
 
 .project {
-  height: 343.75px;
-  width: 400px;
+  height: 290px;
+  width: 520px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -356,7 +356,7 @@ header nav li a:hover {
 }
 
 #page-2 .container .proj {
-  width: 400px;
+  width: 520px;
   height: auto;
 }
 
@@ -381,6 +381,14 @@ header nav li a:hover {
   overflow: auto;
 }
 
+#page-2 .container .proj .project-box .project {
+  background: #ed7846;
+}
+
+#page-2 .container .proj .project-box #html-proj-1 .project {
+  background: url("../img/movie-site.PNG") no-repeat center center/cover;
+}
+
 #page-2 .container .proj .projects {
   height: 500px;
   margin-right: 2rem;
@@ -403,10 +411,6 @@ header nav li a:hover {
 
 #page-2 .container .proj .projects .sub-title {
   margin-bottom: 1rem;
-}
-
-#page-2 .container .regular-projects .projects .project {
-  background: #ed7846;
 }
 
 #page-2 .container .regular-projects .projects .btn-demo {
