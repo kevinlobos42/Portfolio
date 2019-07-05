@@ -17,25 +17,29 @@ function change(e) {
   e.target.classList.add("current");
   switch (e.target.id) {
     case "home":
+      _top = home.offsetTop;
       _left = home.offsetLeft;
       break;
     case "projects":
+      _top = projects.offsetTop;
       _left = projects.offsetLeft;
       break;
     case "skills":
+      _top = skills.offsetTop;
       _left = skills.offsetLeft;
       break;
     case "resume":
+      _top = resume.offsetTop;
       _left = resume.offsetLeft;
       break;
     case "contact":
+      _top = contact.offsetTop;
       _left = contact.offsetLeft;
       break;
   }
   window.scroll({
-    top: 0,
+    top: _top,
     left: _left,
     behavior: "smooth"
   });
-  console.log(document.body.offsetLeft);
 }

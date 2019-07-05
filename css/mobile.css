@@ -1,0 +1,82 @@
+br {
+  display: none;
+}
+
+body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+header ul {
+  display: none;
+}
+
+header .hamburger {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#page-1 .container .left {
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#page-1 .container .left .description {
+  padding: 0;
+}
+
+#page-1 .container .left h1 {
+  font-size: 2.3rem;
+}
+
+#page-1 .container .left p {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+#page-1 .container .left .social {
+  width: 100%;
+}
+
+#page-1 .container .right {
+  display: none;
+}
+
+#page-2 {
+  height: auto;
+}
+
+#page-2 .container .projects-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#page-2 .container .projects-container .proj {
+  height: auto;
+  width: 90vw;
+}
+
+#page-2 .container .projects-container .project {
+  height: 190px;
+  width: 90vw;
+}
+
+#page-2 .container .projects-container .projects .btn {
+  margin: 0;
+}
+/*# sourceMappingURL=mobile.css.map */
