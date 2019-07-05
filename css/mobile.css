@@ -1,3 +1,8 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 br {
   display: none;
 }
@@ -9,7 +14,6 @@ body {
           flex-direction: column;
   height: auto;
   position: relative;
-  overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
 }
@@ -71,6 +75,11 @@ header .hamburger {
   height: auto;
 }
 
+#page-2 .container .title {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
 #page-2 .container .projects-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -91,6 +100,7 @@ header .hamburger {
 
 #page-2 .container .projects-container .projects {
   margin: 0;
+  height: 50vh;
 }
 
 #page-2 .container .projects-container .projects .btn {

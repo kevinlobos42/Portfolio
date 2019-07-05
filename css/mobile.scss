@@ -1,3 +1,7 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
 br {
   display: none;
 }
@@ -6,7 +10,6 @@ body {
   flex-direction: column;
   height: auto;
   position: relative;
-  overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
 }
@@ -60,6 +63,10 @@ header {
 #page-2 {
   height: auto;
   .container {
+    .title {
+      font-size: 2.5rem;
+      margin: 2rem;
+    }
     .projects-container {
       flex-direction: column;
       .proj {
@@ -74,6 +81,7 @@ header {
       .projects {
         margin: 0;
         // display: none;
+        height: 50vh;
         .btn {
           margin: 0;
         }
