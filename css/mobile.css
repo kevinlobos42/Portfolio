@@ -16,7 +16,6 @@ body {
 
 header {
   position: fixed;
-  top: 0;
 }
 
 header ul {
@@ -77,6 +76,7 @@ header .hamburger {
 #page-2 .container .projects-container .project {
   height: 190px;
   width: 90vw;
+  margin: 0;
 }
 
 #page-2 .container .projects-container .projects .btn {
