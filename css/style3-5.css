@@ -61,6 +61,10 @@
           align-items: center;
 }
 
+#page-4 .container .title {
+  display: none;
+}
+
 #page-4 .container embed {
   height: 80%;
   width: 50%;

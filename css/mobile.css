@@ -136,6 +136,31 @@ header .hamburger {
 }
 
 #page-4 {
+  height: 100vh;
+}
+
+#page-4 .container {
+  width: 100vw;
+}
+
+#page-4 .container .title {
+  display: block;
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
+
+#page-4 .container .resume {
+  width: 90%;
+  height: 50vh;
+}
+
+#page-4 .container .resume img {
+  width: 100%;
+  margin: auto;
+}
+
+#page-4 .container .resume img:focus {
   display: none;
 }
 

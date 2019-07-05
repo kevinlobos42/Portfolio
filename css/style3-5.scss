@@ -21,6 +21,9 @@
     justify-content: center;
     align-items: center;
     .container {
+      .title {
+        display: none;
+      }
       display: flex;
       height: 90%;
       flex-direction: column;
