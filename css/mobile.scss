@@ -79,7 +79,7 @@ header {
         margin: 0;
       }
       .projects {
-        margin: 0;
+        margin: 0 2rem 0 0;
         // display: none;
         height: 50vh;
         .btn {
@@ -90,7 +90,26 @@ header {
   }
 }
 #page-3 {
-  display: none;
+  height: auto;
+  .container {
+    .title {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+    }
+  }
+  .progress-box {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 1rem;
+    .progress-bar {
+      height: 35px;
+      width: 100%;
+      margin: 0;
+      align-self: default;
+      justify-self: default;
+    }
+  }
 }
 #page-4 {
   display: none;

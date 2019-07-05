@@ -52,7 +52,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 2fr 1fr 10fr;
+  grid-template-columns: 20% 80%;
   grid-gap: 0;
   margin-top: 50px;
   img {
@@ -64,7 +64,7 @@
 }
 .progress-bar {
   display: inline-block;
-  width: 91%;
+  width: 92%;
   height: 65%;
   background: #fff;
 

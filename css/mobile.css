@@ -99,7 +99,7 @@ header .hamburger {
 }
 
 #page-2 .container .projects-container .projects {
-  margin: 0;
+  margin: 0 2rem 0 0;
   height: 50vh;
 }
 
@@ -108,7 +108,31 @@ header .hamburger {
 }
 
 #page-3 {
-  display: none;
+  height: auto;
+}
+
+#page-3 .container .title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+#page-3 .progress-box {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 1rem;
+}
+
+#page-3 .progress-box .progress-bar {
+  height: 35px;
+  width: 100%;
+  margin: 0;
+  -ms-flex-item-align: default;
+      -ms-grid-row-align: default;
+      align-self: default;
+  -ms-grid-column-align: default;
+      justify-self: default;
 }
 
 #page-4 {
