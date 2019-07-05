@@ -16,10 +16,22 @@ body {
 header {
   position: fixed;
   width: 100%;
-  // display: none;
 
   ul {
-    display: none;
+    display: block;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgba($color: #333, $alpha: 0.8);
+    z-index: 3;
+    transition: all 0.5s;
+    transform: translateX(100%);
   }
   nav {
     margin: auto;
@@ -29,6 +41,7 @@ header {
     display: block;
     color: white;
     font-size: 1.5rem;
+    z-index: 5;
   }
 }
 .page {
@@ -80,7 +93,6 @@ header {
       }
       .projects {
         margin: 0 2rem 0 0;
-        // display: none;
         height: 50vh;
         .btn {
           margin: 0;
