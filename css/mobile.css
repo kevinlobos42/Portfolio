@@ -9,6 +9,7 @@ body {
           flex-direction: column;
   height: auto;
   position: relative;
+  width: 100vw;
   overflow-x: hidden;
 }
 
