@@ -207,8 +207,6 @@ header nav li a:hover {
 }
 
 #page-1 {
-  position: relative;
-  z-index: -2;
   background: #2ec5c5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,6 +293,7 @@ header nav li a:hover {
 
 #page-1 .container .left .social a:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 #page-1 .container .left .social a:hover .link-name {

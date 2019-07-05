@@ -14,6 +14,7 @@ body {
           flex-direction: column;
   height: auto;
   position: relative;
+  z-index: -1;
   overflow-y: auto;
   width: 100%;
 }
@@ -67,6 +68,11 @@ header .hamburger {
   max-width: 100%;
 }
 
+#page-1 {
+  position: relative;
+  z-index: -4;
+}
+
 #page-1 .container .left {
   height: 100%;
   width: 100%;
@@ -90,6 +96,11 @@ header .hamburger {
 
 #page-1 .container .left .social {
   width: 100%;
+}
+
+#page-1 .container .left .social i {
+  position: relative;
+  z-index: 2000000;
 }
 
 #page-1 .container .right {
