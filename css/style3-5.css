@@ -1,6 +1,4 @@
 #page-3 {
-  position: relative;
-  z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +151,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
 #page-5 .container .message-input {
@@ -175,8 +174,9 @@
 #page-5 .container .message-input textarea {
   border-radius: 0.8rem;
   width: 75%;
+  height: 75%;
   border: solid 1px #ccc;
-  padding: 1rem;
+  padding: 0.5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -195,7 +195,7 @@
   border-radius: 0.8rem;
   outline: none;
   border: solid 1px #ccc;
-  padding: 1rem 1rem;
+  padding: 0.5rem;
   font-size: 1.4rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -207,7 +207,7 @@
 }
 
 #page-5 .container .btn {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 75%;
   background: #333;
   color: white;

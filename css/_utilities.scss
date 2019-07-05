@@ -7,6 +7,7 @@
   height: 80%;
   margin: auto;
 }
+
 .logo {
   font-weight: medium;
   color: white;
@@ -33,12 +34,11 @@
   text-align: center;
   color: black;
   width: 130px;
-  // height: 50px;
   align-self: center;
 }
 .project {
-  height: 290px;
-  width: 520px;
+  height: 232px;
+  width: 416px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -78,10 +78,8 @@ p {
   justify-self: left;
   margin-left: 4rem;
   position: relative;
-  z-index: 0;
   & div {
     position: relative;
-    z-index: 0;
     background: #c04b86;
     opacity: 0.8;
   }

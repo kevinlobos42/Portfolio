@@ -133,6 +133,7 @@ header .hamburger {
 }
 
 #page-3 {
+  z-index: -2;
   height: 100vh;
 }
 
@@ -179,6 +180,10 @@ header .hamburger {
       align-self: default;
   -ms-grid-column-align: default;
       justify-self: default;
+}
+
+#page-3 .progress-box .progress-bar div {
+  z-index: 0;
 }
 
 #page-4 {

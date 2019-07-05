@@ -44,31 +44,33 @@ function change(e) {
   });
   console.log(window.scrollY);
 }
-window.onscroll = () => {
-  if (window.scrollY >= 0 && window.scrollY < projects.offsetTop) {
-    links.forEach(link => link.classList.remove("current"));
-    homeLink.classList.add("current");
-  } else if (
-    window.scrollY >= projects.offsetTop &&
-    window.scrollY < skills.offsetTop
-  ) {
-    links.forEach(link => link.classList.remove("current"));
-    projectsLink.classList.add("current");
-  } else if (
-    window.scrollY >= skills.offsetTop &&
-    window.scrollY < resume.offsetTop
-  ) {
-    links.forEach(link => link.classList.remove("current"));
-    skillsLink.classList.add("current");
-  } else if (
-    window.scrollY >= resume.offsetTop &&
-    window.scrollY < contact.offsetTop
-  ) {
-    links.forEach(link => link.classList.remove("current"));
-    resumeLink.classList.add("current");
-  } else if (window.scrollY >= contact.offsetTop) {
-    links.forEach(link => link.classList.remove("current"));
-    contactLink.classList.add("current");
-  }
-};
+if (window.innerWidth <= 600) {
+  window.onscroll = () => {
+    if (window.scrollY >= 0 && window.scrollY < projects.offsetTop) {
+      links.forEach(link => link.classList.remove("current"));
+      homeLink.classList.add("current");
+    } else if (
+      window.scrollY >= projects.offsetTop &&
+      window.scrollY < skills.offsetTop
+    ) {
+      links.forEach(link => link.classList.remove("current"));
+      projectsLink.classList.add("current");
+    } else if (
+      window.scrollY >= skills.offsetTop &&
+      window.scrollY < resume.offsetTop
+    ) {
+      links.forEach(link => link.classList.remove("current"));
+      skillsLink.classList.add("current");
+    } else if (
+      window.scrollY >= resume.offsetTop &&
+      window.scrollY < contact.offsetTop
+    ) {
+      links.forEach(link => link.classList.remove("current"));
+      resumeLink.classList.add("current");
+    } else if (window.scrollY >= contact.offsetTop) {
+      links.forEach(link => link.classList.remove("current"));
+      contactLink.classList.add("current");
+    }
+  };
+}
 console.log(window.scrollY);

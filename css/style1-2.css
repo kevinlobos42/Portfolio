@@ -44,8 +44,8 @@
 }
 
 .project {
-  height: 290px;
-  width: 520px;
+  height: 232px;
+  width: 416px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -99,12 +99,10 @@ p {
       justify-self: left;
   margin-left: 4rem;
   position: relative;
-  z-index: 0;
 }
 
 .progress-bar div {
   position: relative;
-  z-index: 0;
   background: #c04b86;
   opacity: 0.8;
 }
@@ -353,6 +351,11 @@ header nav li a:hover {
           align-items: center;
 }
 
+#page-2 .container .title {
+  margin: 2rem;
+  margin-top: 6rem;
+}
+
 #page-2 .container .projects-container {
   width: 100%;
   display: -webkit-box;
@@ -367,7 +370,7 @@ header nav li a:hover {
 }
 
 #page-2 .container .proj {
-  width: 520px;
+  width: 416px;
   height: auto;
 }
 
