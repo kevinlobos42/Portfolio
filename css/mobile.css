@@ -9,23 +9,33 @@ body {
           flex-direction: column;
   height: auto;
   position: relative;
-  width: auto;
   overflow-x: hidden;
   overflow-y: auto;
+  width: 100%;
 }
 
 header {
   position: fixed;
+  width: 100%;
 }
 
 header ul {
   display: none;
 }
 
+header nav {
+  margin: auto;
+  padding: 0;
+}
+
 header .hamburger {
   display: block;
   color: white;
   font-size: 1.5rem;
+}
+
+.page {
+  max-width: 100%;
 }
 
 #page-1 .container .left {
@@ -76,6 +86,10 @@ header .hamburger {
 #page-2 .container .projects-container .project {
   height: 190px;
   width: 90vw;
+  margin: 0;
+}
+
+#page-2 .container .projects-container .projects {
   margin: 0;
 }
 

@@ -155,7 +155,7 @@ a {
 header {
   height: 10vh;
   position: fixed;
-  width: 100vw;
+  width: 100%;
 }
 
 header nav {
