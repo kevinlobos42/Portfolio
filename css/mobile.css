@@ -108,20 +108,41 @@ header .hamburger {
 }
 
 #page-3 {
-  height: auto;
+  height: 100vh;
+}
+
+#page-3 .container {
+  margin: 3rem auto;
 }
 
 #page-3 .container .title {
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 #page-3 .progress-box {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 2.5rem;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 1rem;
+}
+
+#page-3 .progress-box .sub-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-3 .progress-box .sub-box .sub-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#page-3 .progress-box .sub-box img {
+  width: 40px;
+  height: 40px;
 }
 
 #page-3 .progress-box .progress-bar {
@@ -164,7 +185,24 @@ header .hamburger {
   display: none;
 }
 
-#page-5 {
-  display: none;
+#page-5 .container {
+  width: 90%;
+}
+
+#page-5 .container .container-box input {
+  padding: 0.5rem;
+}
+
+#page-5 .container .container-box textarea {
+  padding: 0.5rem;
+}
+
+#page-5 .container .container-box .btn {
+  margin-top: 0rem;
+}
+
+#page-5 .container .container-box label {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 }
 /*# sourceMappingURL=mobile.css.map */

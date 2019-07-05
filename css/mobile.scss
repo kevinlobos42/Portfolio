@@ -90,15 +90,28 @@ header {
   }
 }
 #page-3 {
-  height: auto;
+  height: 100vh;
   .container {
+    margin: 3rem auto;
     .title {
       font-size: 2.5rem;
-      margin: 1rem 0;
+      margin: 0;
+      margin-bottom: 1.5rem;
     }
   }
   .progress-box {
-    margin-top: 2rem;
+    .sub-box {
+      align-items: center;
+      .sub-title {
+        font-size: 2rem;
+        margin: 0;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    margin-top: 0rem;
     margin-bottom: 2.5rem;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 1rem;
@@ -136,5 +149,22 @@ header {
   }
 }
 #page-5 {
-  display: none;
+  .container {
+    width: 90%;
+    .container-box {
+      input {
+        padding: 0.5rem;
+      }
+      textarea {
+        padding: 0.5rem;
+      }
+      .btn {
+        margin-top: 0rem;
+      }
+      label {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
 }
