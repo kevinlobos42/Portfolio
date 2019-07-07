@@ -402,6 +402,10 @@ header nav li a:hover {
   background: url("../img/movie-site.PNG") no-repeat center center/cover;
 }
 
+#page-2 .container .proj .project-box #html-proj-4 .project {
+  background: url("../img/todo-list-site.PNG") no-repeat center center/cover;
+}
+
 #page-2 .container .proj .project-box #html-proj-5 .project {
   background: url("../img/rps-site.PNG") no-repeat center center/cover;
 }
