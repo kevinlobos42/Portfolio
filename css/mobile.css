@@ -114,6 +114,7 @@ header .hamburger {
 #page-2 .container .title {
   font-size: 2.5rem;
   margin: 2rem;
+  margin-top: 10vh;
 }
 
 #page-2 .container .projects-container {
