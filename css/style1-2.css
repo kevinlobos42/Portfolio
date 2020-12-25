@@ -6,13 +6,28 @@
 .container {
   width: 85%;
   height: 80%;
-  margin: auto;
+  margin: auto auto;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h90 {
+  height: 90%;
+}
+
+.spacing10 {
+  height: 10px;
+  width: 100%;
+  background: transparent;
 }
 
 .logo {
   font-weight: medium;
   color: white;
-  font-family: "Merienda", cursive;
+  font-family: 'Merienda', cursive;
   font-size: 2rem;
 }
 
@@ -41,6 +56,8 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: relative;
+  z-index: 5;
 }
 
 .project {
@@ -141,7 +158,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 li {
@@ -352,25 +369,108 @@ header nav li a:hover {
 
 #page-2 .container .title {
   margin: 2rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
+}
+
+#page-2 .container .project-to-menu {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+#page-2 .container .project-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  margin: 0 0 2rem 0;
+}
+
+#page-2 .container .project-menu .option {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #000;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-2 .container .project-menu .option-js {
+  background: #f0db4f;
+}
+
+#page-2 .container .project-menu .option-react {
+  background: #00d8ff;
+}
+
+#page-2 .container .project-menu .option-vue {
+  background: #00c180;
+}
+
+#page-2 .container .project-menu .option-java {
+  background: #f89820;
+}
+
+#page-2 .container .project-menu .option.current-menu {
+  -webkit-box-shadow: inset 0 0 0 5px #fff;
+          box-shadow: inset 0 0 0 5px #fff;
+}
+
+#page-2 .container .project-menu .option:hover {
+  -webkit-box-shadow: inset 0 0 0 7px #fff;
+          box-shadow: inset 0 0 0 7px #fff;
 }
 
 #page-2 .container .projects-container {
-  width: 100%;
+  position: relative;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 #page-2 .container .proj {
-  width: 416px;
-  height: auto;
+  width: 50%;
+  min-height: 100%;
+  display: none;
+}
+
+#page-2 .container .proj.show {
+  display: block;
 }
 
 #page-2 .container .proj .dots {
@@ -392,10 +492,13 @@ header nav li a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   overflow: auto;
+  height: 100%;
 }
 
 #page-2 .container .proj .project-box .project {
   background: #ed7846;
+  width: 100%;
+  height: 500px;
 }
 
 #page-2 .container .proj .project-box #html-proj-1 .project {
@@ -415,7 +518,8 @@ header nav li a:hover {
 }
 
 #page-2 .container .proj .projects {
-  height: 500px;
+  min-width: 100%;
+  min-height: 100%;
   margin-right: 2rem;
 }
 
