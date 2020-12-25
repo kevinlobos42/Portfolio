@@ -82,7 +82,7 @@ header .hamburger {
 }
 
 #page-1 .container .left .description {
-  padding: 0;
+  padding: 0px;
 }
 
 #page-1 .container .left h1 {
@@ -107,8 +107,16 @@ header .hamburger {
   display: none;
 }
 
+#page-2 .container .projects-container .project {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+}
+
 #page-2 {
-  height: auto;
+  position: relative;
+  z-index: -4;
+  height: 100vh;
 }
 
 #page-2 .container .title {
@@ -122,17 +130,25 @@ header .hamburger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 0;
 }
 
 #page-2 .container .projects-container .proj {
   height: auto;
   width: 90vw;
+  position: relative;
+  z-index: 0;
 }
 
 #page-2 .container .projects-container .project {
-  height: 190px;
-  width: 90vw;
+  width: 100%;
+  height: 400px;
   margin: 0;
+}
+
+#page-2 .container .projects-container .project-box {
+  height: 90%;
 }
 
 #page-2 .container .projects-container .projects {
@@ -142,6 +158,23 @@ header .hamburger {
 
 #page-2 .container .projects-container .projects .btn {
   margin: 0;
+}
+
+#page-2 .container .project-menu {
+  width: 95%;
+}
+
+#page-2 .container .project-menu h1 {
+  font-size: 1.2rem;
+}
+
+#page-2 .container .project-menu .option {
+  padding: 0.5rem 0.25rem;
+}
+
+#page-2 .container .project-menu .option.current-menu {
+  -webkit-box-shadow: inset 0 0 0 4px #fff;
+          box-shadow: inset 0 0 0 4px #fff;
 }
 
 #page-3 {
@@ -199,6 +232,8 @@ header .hamburger {
 }
 
 #page-4 {
+  position: relative;
+  z-index: -4;
   height: 100vh;
 }
 
@@ -227,8 +262,15 @@ header .hamburger {
   display: none;
 }
 
+#page-5 {
+  position: relative;
+  z-index: -4;
+}
+
 #page-5 .container {
   width: 90%;
+  height: 70vh;
+  margin: auto;
 }
 
 #page-5 .container .container-box input {
@@ -246,5 +288,17 @@ header .hamburger {
 #page-5 .container .container-box label {
   font-size: 1rem;
   padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    width: 100% !important;
+    height: 200px !important;
+    margin: 0;
+  }
+  #page-5 .container {
+    height: 80vh;
+    margin-top: 7rem;
+  }
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -57,7 +57,7 @@ header {
       width: 100%;
       justify-content: space-evenly;
       .description {
-        padding: 0;
+        padding: 0px;
       }
       h1 {
         font-size: 2.3rem;
@@ -80,8 +80,16 @@ header {
     }
   }
 }
+#page-2 .container .projects-container .project {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+}
 #page-2 {
-  height: auto;
+  position: relative;
+  z-index: -4;
+  height: 100vh;
+
   .container {
     .title {
       font-size: 2.5rem;
@@ -90,21 +98,41 @@ header {
     }
     .projects-container {
       flex-direction: column;
+      position: relative;
+      z-index: 0;
       .proj {
         height: auto;
         width: 90vw;
+        position: relative;
+        z-index: 0;
       }
       .project {
-        height: 190px;
-        width: 90vw;
+        width: 100%;
+        height: 400px;
         margin: 0;
       }
+      .project-box {
+        height: 90%;
+      }
+
       .projects {
         margin: 0 2rem 0 0;
         height: 50vh;
         .btn {
           margin: 0;
         }
+      }
+    }
+    .project-menu {
+      width: 95%;
+      h1 {
+        font-size: 1.2rem;
+      }
+      .option {
+        padding: 0.5rem 0.25rem;
+      }
+      .option.current-menu {
+        box-shadow: inset 0 0 0 4px #fff;
       }
     }
   }
@@ -150,6 +178,8 @@ header {
   }
 }
 #page-4 {
+  position: relative;
+  z-index: -4;
   height: 100vh;
   .container {
     .title {
@@ -174,8 +204,12 @@ header {
   }
 }
 #page-5 {
+  position: relative;
+  z-index: -4;
   .container {
     width: 90%;
+    height: 70vh;
+    margin: auto;
     .container-box {
       input {
         padding: 0.5rem;
@@ -190,6 +224,19 @@ header {
         font-size: 1rem;
         padding-bottom: 0.5rem;
       }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project {
+    width: 100% !important;
+    height: 200px !important;
+    margin: 0;
+  }
+  #page-5 {
+    .container {
+      height: 80vh;
+      margin-top: 7rem;
     }
   }
 }
