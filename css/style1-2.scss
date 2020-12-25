@@ -220,7 +220,7 @@ header {
         width: 100%;
       }
       & .proj {
-        width: 50%;
+        width: 80%;
         min-height: 100%;
         display: none;
         &.show {
@@ -242,7 +242,7 @@ header {
           & .project {
             background: #ed7846;
             width: 100%;
-            max-height: 500px;
+            height: 500px;
           }
           & #html-proj-1 .project {
             background: url('../img/movie-site.PNG') no-repeat center

@@ -141,7 +141,7 @@ header .hamburger {
   z-index: 0;
 }
 
-#page-2 .container .projects-container .project {
+#page-2 .container .projects-container .proj .project-box .project {
   width: 100%;
   height: 400px;
   margin: 0;
