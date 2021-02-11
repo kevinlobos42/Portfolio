@@ -7,6 +7,9 @@
   height: 80%;
   margin: auto auto;
 }
+.container-h90 {
+  height: 90%;
+}
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -50,8 +53,7 @@
   z-index: 5;
 }
 .project {
-  max-width: 1200px;
-  max-height: 500px;
+  max-height: 800px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
