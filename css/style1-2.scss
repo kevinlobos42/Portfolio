@@ -13,7 +13,6 @@ body {
   height: 100%;
   width: 500vw;
   display: flex;
-  // background: $main-color;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
 }
@@ -37,17 +36,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    // & .logo {
-    //   font-size: 2rem;
-    //   color: white;
-    //   font-family: "Merienda", cursive;
-    //   font-weight: light;
-    // }
-
     & li {
       font-size: 1.3rem;
       color: white;
-      // opacity: 0.7;
       margin: 0.5rem 2rem;
       cursor: pointer;
       & .current {
@@ -149,6 +140,7 @@ header {
       }
     }
   }
+  // page2
   &-2 {
     background: $secondary-color;
     display: flex;
@@ -165,15 +157,7 @@ header {
       justify-content: center;
       text-align: center;
       align-items: center;
-      & .project-to-menu {
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin-top: 2rem;
-        margin-bottom: 0;
-      }
+
       & .project-menu {
         display: flex;
         justify-content: space-between;
@@ -223,9 +207,7 @@ header {
         width: 80%;
         min-height: 100%;
         display: none;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+
         &.show {
           display: block;
         }
@@ -263,6 +245,14 @@ header {
           }
           & #html-proj-5 .project {
             background: url('../img/rps-site.PNG') no-repeat center center/cover;
+          }
+          & #react-proj-1 .project {
+            background: url('../img/find-a-pup.jpg') no-repeat center
+              center/cover;
+          }
+          & #react-proj-2 .project {
+            background: url('../img/lobos-recipes.jpg') no-repeat center
+              center/cover;
           }
         }
         & .projects {

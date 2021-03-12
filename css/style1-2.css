@@ -375,25 +375,6 @@ header nav li a:hover {
   margin-top: 3rem;
 }
 
-#page-2 .container .project-to-menu {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  margin-top: 2rem;
-  margin-bottom: 0;
-}
-
 #page-2 .container .project-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,6 +500,14 @@ header nav li a:hover {
 
 #page-2 .container .proj .project-box #html-proj-5 .project {
   background: url("../img/rps-site.PNG") no-repeat center center/cover;
+}
+
+#page-2 .container .proj .project-box #react-proj-1 .project {
+  background: url("../img/find-a-pup.jpg") no-repeat center center/cover;
+}
+
+#page-2 .container .proj .project-box #react-proj-2 .project {
+  background: url("../img/lobos-recipes.jpg") no-repeat center center/cover;
 }
 
 #page-2 .container .proj .projects {
